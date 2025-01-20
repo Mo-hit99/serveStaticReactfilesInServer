@@ -8,7 +8,7 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-client": "cd ../client && npm install && npm run build",
-    "deploy" : "npm run build-client && npm install && npm run start"
+    "deploy" : "npm run build-client && npm install && node server.js"
   },
   "keywords": [],
   "author": "",
