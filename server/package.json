@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "20.18.1"
+  },
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-client": "cd ../client && npm install && npm run build",
-    "deploy" : "npm run build-client && npm install && node server.js"
+    "deploy" : "npm run build-client && npm install && npm start"
   },
   "keywords": [],
   "author": "",
