@@ -8,7 +8,7 @@ export default function Home() {
     },[])
   async function getDataFromServer(){
     try {
-      const response = await axios.get('http://localhost:3000/api/v1')
+      const response = await axios.get('https://servestaticreactfilesinserver.onrender.com/api/v1')
       setMessage(response.data)
     } catch (error) { 
       console.log(error)
