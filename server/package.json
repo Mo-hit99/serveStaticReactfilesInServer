@@ -7,7 +7,7 @@
     "node": "20.18.1"
   },
   "scripts": {
-    "build-client": "cd ./../client && npm ci && npx vite build",
+    "build-client": "cd ./../client && npm install && npm run build",
     "start": "node server.js",
     "deploy" : "npm run build-client && npm install && npm run start",
     "dev": "nodemon server.js"
